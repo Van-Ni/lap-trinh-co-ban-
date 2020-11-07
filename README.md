@@ -1,4 +1,3 @@
-Bài làm thực hành lập trình cơ bản
 
 Sinh viên: Nguyễn Văn Ni
 
