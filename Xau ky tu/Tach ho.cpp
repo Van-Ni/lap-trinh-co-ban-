@@ -4,7 +4,7 @@ void tachHo(char *ht, char *ho)
 {
 	char *p;
 	p=strstr(ht, " ");// lay tu vi tri dau cach tro di
-	strncpy(ho,ht,p-ht);//
+	strncpy(ho,ht,p-ht);// ho: noi dung duoc sao chep//ht: chuoi duoc sao chep // p-ht: so ky tu duoc sao chep tu ht lenh tren
 	ho[p-ht]='\0';
 }
 main()
