@@ -16,4 +16,26 @@ main()
 	printf("Ten xau khi duoc tach la:\n");
 	puts(ten);
 }
-
+//////////
+char tachTen(char *c)
+{
+ int n=strlen(c);
+for(int i=n-1;i>=0;i--)
+{
+	if(c[i]==32)
+	{
+		for(int j=i;j<=n;j++)
+		{
+			printf("%c", c[i]);
+		}
+		return 0;
+	}
+}
+main()
+{
+	char c[100];
+	printf("Nhap xau : ");
+	gets(c);
+	printf("Chuoi sau khi duoc tach ten\n: ");
+	xuatTen(c);
+}	
