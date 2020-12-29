@@ -60,3 +60,30 @@ main()
 	printf("Ho ten dem sau khi duoc chuyen la\n: ");
 	hienThi(c);
 }
+//////////////////////////////////////////////////////////
+#include <stdio.h>
+#include <string.h>
+void daoChuoi(char *c)
+{
+    int n= strlen(chuoi)-1;
+            for(i=n; i>=0; i--)
+            {
+                        if(chuoi[i]==32 || i==0)
+                        {
+                                    for(j=i; j<=n; j++)
+                                    {
+                                                printf("%c", chuoi[j]);
+                                    }
+                                    n=i;
+                        }
+            }
+}
+	
+main()
+{
+	char c[100];
+	printf("nhap xau c: ");
+    gets(c);
+	printf("Ho ten dem sau khi duoc chuyen la\n: ");
+	(c);
+	
