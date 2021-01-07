@@ -29,4 +29,25 @@ main()
 	d=Range(A,B);
 	printf("%f", d);
 	PrintAB(A); PrintAB(B);
+	printf("\nkhoang cash 2 diem A va B la: %f\n\t", d);
+	if(A.x==0&&B.y==0)
+	{
+		printf("A nam tren truc toa do");
+	}
+	else
+	{
+		if(A.x==0)
+		printf("A nam tren truc tung");
+		else
+		{
+			if(A.y==0)
+			{
+				printf("A nam tren truc hoanh");
+			}
+			else
+			{
+				printf("A nam ngoai truc");
+			}
+		}
+	}
 }
