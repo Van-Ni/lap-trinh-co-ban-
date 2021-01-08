@@ -1,31 +1,33 @@
+
 #include <stdio.h>
 void nhapMang(int a[], int n)
 {
 	for(int i=0;i<n;i++)
 	{
-		printf("Nhap phan tu thu [%d]", i);
-		scanf("%d", &a[i]);
-	}
+	printf("Nhap phan tu thu a[%d]", i);
+	scanf("%d", &a[i]);
+    }
 }
 void ghiTep(int a[], int n)
 {
 	FILE *f;
-	f=fopen("songuyen.txt","w");
-	fprintf(f,"%d\n", n);
+	f=fopen("songuyen.txt", "w");
+	fprintf(f,"  %d\n  ", n);
 	for(int i=0;i<n;i++)
 	{
-		fprintf(f," %d ", a[i]);
+		fprintf(f, " %d\n ", a[i]);
 	}
 	fclose(f);
 }
-float tbcTep()
+float tbc()
 {
 	FILE *f;
-	int tong=0, n, so;
-	f=fopen("songuyen.txt","r");
+	int tong, n, so;
+	f=fopen("songuyen.txt", "r");
+	fscanf(f," %d ", &n);
 	for(int i=0;i<n;i++)
 	{
-		fscanf(f," %d ",&so);
+		fscanf(f," %d ", &so);
 		tong=tong+so;
 	}
 	fclose(f);
@@ -36,7 +38,6 @@ main()
 	int a[10];
 	nhapMang(a,5);
 	ghiTep(a,5);
-	float doc;
-	doc=tbcTep();
-	printf("%f", doc);
+	float kq=tbc();
+	printf("Ket qua= %f", kq);
 }
