@@ -24,7 +24,7 @@ void docTep()
 	FILE *f;
 	f=fopen("nguyenam.txt", "r");
 	int dem=0;
-	char chu, kq;
+	char chu;
 	while(fscanf(f," %c ", &chu)>0)
 	{
 		if(chu=='a')
